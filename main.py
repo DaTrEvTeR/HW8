@@ -15,7 +15,15 @@ import re
 
 # - Мобільний номер телефону (тільки цифри, можлива наявність плюса, довжина номера)
 
+test_mobile_phone_numbers = ['+380982445600', '380952445600', '0671212370', '+798456513218488', '6440484465', '864dd65d98d8f49v1d9', '09625314 7']
 
+mobile_phone_number_regex = re.compile(r'^\+{,1}\d{10,12}')
+
+for phone in test_mobile_phone_numbers:
+    if mobile_phone_number_regex.fullmatch(phone):
+        print(f'{phone} is correct')
+    else:
+        print(f'{phone} is not correct')
 
 # - email (наявність @, домену: gmail.com наприклад, мінімальна довжина та максимальна на ваш вибір)
 
