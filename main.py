@@ -27,7 +27,15 @@ import re
 
 # - email (наявність @, домену: gmail.com наприклад, мінімальна довжина та максимальна на ваш вибір)
 
+test_emails = ['darkweider0@gmail.com', 'singe r@mac.com', 'pen-na@verizon.net', 'ca_menisch@msn.com', 'jsno.ver@mac..com']
 
+email_regex = re.compile(r"^[A-Za-z0-9]+[._]?[A-Za-z0-9]+@[A-Za-z]+[.][A-Za-z]{2,}$")
+
+for email in test_emails:
+    if email_regex.match(email):
+        print(f"Email: {email} is correct")
+    else:
+        print(f"Email: {email} is not correct")
 
 # - ПІБ клієнта (3 слова, мінімальна довжина 2 символи, максимальна довжина 20)
 
