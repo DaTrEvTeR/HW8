@@ -3,15 +3,15 @@ import re
 
 # - домашній номер телефону (тільки цифри та довжина номера)
 
-test_phone_numbers = ['7251117', '5263548', '201548', '7251896 ', '725418b', '0327/89', '20154878']
-
-phone_numbers_regex = re.compile(r'[0-9]{7}')
-
-for phone in test_phone_numbers:
-    if phone_numbers_regex.fullmatch(phone):
-        print(f'{phone} is correct')
-    else:
-        print(f'{phone} is not correct')
+# test_phone_numbers = ['7251117', '5263548', '201548', '7251896 ', '725418b', '0327/89', '20154878']
+#
+# phone_numbers_regex = re.compile(r'[0-9]{7}')
+#
+# for phone in test_phone_numbers:
+#     if phone_numbers_regex.fullmatch(phone):
+#         print(f'{phone} is correct')
+#     else:
+#         print(f'{phone} is not correct')
 
 # - Мобільний номер телефону (тільки цифри, можлива наявність плюса, довжина номера)
 
