@@ -48,3 +48,5 @@ import re
 #         print(f'{fio} is correct')
 #     else:
 #         print(f'{fio} is not correct')
+
+# ALL TASKS DONE
